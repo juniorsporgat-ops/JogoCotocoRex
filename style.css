@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#477;
+}
+
+header{
+    background-image:url("imagens/banner.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:300px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:20px;
+    text-align:center;
+}
+nav{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 22px;
+    border:2px solid #dcdcdc;
+    border-radius:8px;
+    transition:0.3s;
+    
+}
+
+nav a:hover{
+    background:yellow;
+    color:black;
+    border-color:yellow;
+}
+
+main{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    gap:30px;
+}
+
+.esquerda{
+    width:70%;
+}
+.esquerda h2, .direita h2{
+    text-align:center;
+    color:white;
+}
+
+.imagens{
+    display:flex;
+    gap:20px;
+}
+
+.imagens img{
+    width:48%;
+    border-radius:10px;
+}
+
+.direita{
+    width:30%;
+}
+
+.foto{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    object-fit:cover;
+}
+
+.bio{
+    color:white;
+    text-align:center;
+    line-height:1.6;
+    font-size:18px;
+}
+
+.redes{
+    text-align:center;
+    margin-top:20px;
+}
+
+.redes a{
+    color:black;
+    font-size:28px;
+    margin:10px;
+}
+
+.redes a:hover{
+    color:#fff;
+}
+
+.caixa-final{
+    width:150px;
+    height:100px;
+    background:white;
+    border-radius:100%;
+    margin:25px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:4px 4px 15px rgba(0,0,0,0.25);
+}
+
+.caixa-final p{
+    margin:0;
+    font-size:22px;
+    font-family:cursive;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+
+@media (max-width:768px){
+
+    .imagens{
+        flex-direction:column;
+    }
+
+    .imagens img{
+        width:110%;
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .esquerda{
+        order:1;
+    }
+    .direita{
+        order:2;
+        width:100%;
+        margin-top:20px;
+    }
+
+    nav div{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+
+}
